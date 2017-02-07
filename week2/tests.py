@@ -105,7 +105,7 @@ if ex3runs():
 
     testResults.append(
          test('map' in strip_docstring(exercise3.loops_1b) and
-              exercise3.loops_1b == tenStars,
+              exercise3.loops_1b() == tenStars,
               "Exercise 3: loops_1b - 1d map"))
 
     testResults.append(
