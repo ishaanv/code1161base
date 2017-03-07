@@ -1,10 +1,14 @@
 # -*- coding: UTF-8 -*-
+"""Week 3, Exercise 4."""
+from __future__ import division
+from __future__ import print_function
 import math
 # import time
 
 
 def binary_search(low, high, actual_number):
-    """
+    """Do a binary search.
+
     This is going to be your first 'algorithm' in the usual sense of the word!
     you'll give it a range to guess inside, and then use binary search to home
     in on the actual_number.
@@ -23,25 +27,12 @@ def binary_search(low, high, actual_number):
       (You should remove them from the file, not comment them out, the
       tests aren't that smart yet.)
     """
-    GUARD = 10
-    tries = 0
-    while True and tries < GUARD:
-        guess = int(math.floor((high - low) * 0.5) + low)
-        if guess < actual_number:
-            low = guess
-        elif guess > actual_number:
-            high = guess
-        elif guess == actual_number:
-            return {"guess": guess, "tries": tries}
-        else:
-            print "there's some freaky stuff going on here"
-        tries += 1
-        # time.sleep(0.5)
+    pass
 
 
 if __name__ == "__main__":
-    print binary_search(1, 100, 5)
-    print binary_search(1, 100, 6)
-    print binary_search(1, 100, 95)
-    print binary_search(1, 51, 5)
-    print binary_search(1, 50, 5)
+    print(binary_search(1, 100, 5))
+    print(binary_search(1, 100, 6))
+    print(binary_search(1, 100, 95))
+    print(binary_search(1, 51, 5))
+    print(binary_search(1, 50, 5))
