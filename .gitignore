@@ -1,1 +1,7 @@
 *.pyc
+.ipynb_checkpoints
+temp_results\.json
+
+week3c
+
+temp_inspect\.json
